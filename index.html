@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select your favourite players</title>
+    <!-- fontawesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+        <div class="container">
+            <Section id="banner_section">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="banner_info">
+                            <h1>Choose Five Players you like most </h1>
+                            <p> A person who participates in or is skilled at some game or sport are called
+                                players. <br> There are different kind of players such as cricket, football,
+                                boxing,tennis,tennis.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </Section>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- main start-->
+    <main>
+        <div class="container mt-5">
+            <section class="main_section ">
+                <!-- left section -->
+                <section id="left">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="row g-3">
+                                <!-- card-1 -->
+                                <div class="col-md-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./img/mashrafi.jpg" class="card-img-top" alt="..." height="170px">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mashrafi</h5>
+                                            <p class="card-text">Mashrafe Bin Mortaza. Age:38 </p>
+
+                                            <button onclick=addToSelectedPlayers(this) id="selectedPlayerMashrafi"
+                                                class="btn btn-warning">Select2</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card-2 -->
+                                <div class="col-md-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./img/mushfiq.jpg" class="card-img-top" alt="Mushfiq" height="170px">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mushfiq</h5>
+                                            <p class="card-text">Mushfiqur Rahim. Age:35</p>
+                                            <!-- <a href="#" id="selectedPlayerMushfiq" class="btn btn-success"
+                                                onclick=addToSelectedPlayers(this)>Select2</a> -->
+                                            <button onclick=addToSelectedPlayers(this) id="selectedPlayerMushfiq"
+                                                class="btn btn-success">Select2</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card-3 -->
+                                <div class="col-md-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./img/shakib.jpg" class="card-img-top" alt="..." height="170px">
+                                        <div class="card-body">
+                                            <h5 class="card-title">shakib</h5>
+                                            <p class="card-text">Shakib Al Hasan. Age:35</p>
+                                            <!-- <a href="#" id="selectedPlayerShakib" class="btn btn-warning"
+                                                onclick=addToSelectedPlayers(this)>Select3</a> -->
+                                            <button onclick=addToSelectedPlayers(this) id="selectedPlayerShakib"
+                                                class="btn btn-warning">Select2</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card-4 -->
+                                <div class="col-md-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./img/riad.jpg" class="card-img-top" alt="..." height="170px">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Riad</h5>
+                                            <p class="card-text">Mahmudullah Riad . Age:36</p>
+                                            <!-- <a href="#" id="selectedPlayerRiad" class="btn btn-success"
+                                                onclick="addToSelectedPlayers(this)">Select4</a> -->
+                                            <button onclick=addToSelectedPlayers(this) id="selectedPlayerRiad"
+                                                class="btn btn-success">Select2</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card-5 -->
+                                <div class="col-md-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./img/tamim.jpg" class="card-img-top" alt="..." height="170px">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tamim</h5>
+                                            <p class="card-text">Tamim Iqbal. Age:35</p>
+                                            <!-- <a href="#" id="selectedPlayerTamim" class="btn btn-warning"
+                                                onclick="addToSelectedPlayers(this)">Select5</a> -->
+                                            <button onclick=addToSelectedPlayers(this) id="selectedPlayerTamim"
+                                                class="btn btn-warning">Select2</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card-6 -->
+                                <div class="col-md-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./img/rubel.jpg" class="card-img-top" alt="..." height="170px">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Rubel</h5>
+                                            <p class="card-text">Rubel hssain. Age:32</p>
+                                            <!-- <a href="#" id="selectedPlayerRubel" class="btn btn-success"
+                                                onclick="addToSelectedPlayers(this)">Select6</a> -->
+                                            <button onclick=addToSelectedPlayers(this) id="selectedPlayerRubel"
+                                                class="btn btn-success">Select2</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- remain 3 column -->
+                        <!-- right section -->
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="selected_five bg-success rounded">
+                                        <h4 class="ps-2 pt-2 text-white">Selected Players [ <span
+                                                id="total-added-player">
+                                            </span> ] </h4>
+                                        <hr>
+                                        <ol class="text-white" id="selected-players">
+
+                                        </ol>
+                                        <hr>
+                                    </div>
+                                </div>
+                                <!--Player budget -->
+                                <div class="col-md-12">
+                                    <div class="selected_budget bg-success rounded ps-2">
+                                        <h3 class=" pt-2 text-white">Budget</h3>
+                                        <!-- player -->
+                                        <div class="player">
+                                            <hr>
+                                            <label class="pb-0 text-white">Per player :</label> <br>
+                                            <input class="rounded-1" type="text" name="" id="player-budget"
+                                                placeholder="per player budget">
+                                            <button class="btn btn-warning rounded-1 mt-2"
+                                                id="calculate">Calculate</button>
+                                            <p class=" text-white py-2">Player expense : $ <span
+                                                    id="player-expense">00</span> </p>
+                                        </div>
+                                        <!-- manager -->
+                                        <div class="manager">
+                                            <label for="" class="text-white">Manager :</label> <br>
+                                            <input class="rounded-1 " type="text" placeholder="manager cost"
+                                                id="manager-cost">
+                                        </div>
+                                        <!-- Coach -->
+                                        <div class="Coach pb-4">
+                                            <label for="" class="text-white">Coach :</label> <br>
+                                            <input class="rounded-1 " type="text" placeholder="Coach cost"
+                                                id="coach-cost">
+                                        </div>
+                                        <!-- calculate total -->
+                                        <div class="calculate-total pb-4 ">
+                                            <button class="btn btn-warning " id="calculate-total">Calculate
+                                                total</button>
+                                            <h5 class="pt-4 text-white">Total : $ <span id="initial-total">00</span>
+                                            </h5>
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- right section -->
+
+            </section>
+
+        </div>
+    </main>
+    <!-- main end-->
+
+    <!-- footer start-->
+    <footer>
+        <section class="footer_info bg-dark py-4 my-4 ">
+            <h5 class="text-white text-center">Copyright @ 2022 All Rights Reserved</h5>
+            <h6 class="text-white text-center">Md. Ferdows Hasan</h6>
+        </section>
+    </footer>
+    <!-- footer end-->
+    <!-- js file here -->
+    <!-- app-js file -->
+    <script src="./js/player.js"></script>
+    <!-- <script src="./js/budget.js"></script> -->
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

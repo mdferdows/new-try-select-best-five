@@ -1,0 +1,15 @@
+.banner_info{
+    background: #000000d2;
+    padding: 40px 12px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+.banner_info h1{
+    color: #ee940d;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.banner_info p{
+    color: #78e674;
+    text-align: center;
+} 
